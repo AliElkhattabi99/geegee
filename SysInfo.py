@@ -34,3 +34,5 @@ class System:
             return json.dumps(info)
         except Exception as e:
             print(e)
+ss = System()
+ss.to_github()            
