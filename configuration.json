@@ -1,0 +1,22 @@
+{
+    "cloud_service_checker": {
+        "service": "AWS"
+    },
+    "cloud_security_logging": {
+        "log_filename": "security.log",
+        "log_level": "INFO"
+    },
+    "cloud_vulnerability_scanner": {
+        "service": "AWS"
+    },
+    "cloud_compliance_checker": {
+        "service": "AWS",
+        "standards": ["PCI DSS", "GDPR"]
+    },
+    "github_code_runner": {
+        "repo_owner": "AliElkhattabi99",
+        "repo_name": "geegee",
+        "action_to_check": "your_action",
+        "access_token": "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"
+    }
+}
