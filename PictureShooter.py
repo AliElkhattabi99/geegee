@@ -41,6 +41,7 @@ class PictureShooter:
                 )
                 print("Picture uploaded successfully")
                 github.save_to_repo("Pictures/" + name, content)
+                print("Picture done"),
             os.remove("picture.jpg")
         except Exception as e:
             print(f"Failed to upload picture: {str(e)}")
