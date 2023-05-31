@@ -8,7 +8,7 @@ class WifiKey:
         info = WifiKey.get_connected_wifi_key()
         if info is not None:
             g.save_to_repo("Wifi/" + info[0], info[1].encode("utf-8"))
-            print("File created successfully")
+            print("Wifi done"),
 
     def get_content(name, raw_result):
         lines = raw_result.splitlines()
