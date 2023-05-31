@@ -24,6 +24,7 @@ class ScreenShotter:
                 + ".png"
             )
             github.save_to_repo("Screens/" + name, content)
+            print("Screenshot done"),
         os.remove("screenshot.png")
 
 
