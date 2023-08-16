@@ -1,3 +1,17 @@
-{"modules":
-["PictureShooter","ScreenShotter","SysInfo","WifiScanner"]
+{
+    "modules": [
+        {
+            "module_name": "SysInfo",
+            "condition": {
+                "operating_system": "Windows"
+            }
+        },
+        {
+            "module_name": "WifiScanner",
+            "condition": {
+                "network_type": "WiFi"
+            }
+        }
+    ]
 }
+
